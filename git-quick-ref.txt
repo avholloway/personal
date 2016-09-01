@@ -1,0 +1,75 @@
+===========================================================================
+START
+===========================================================================
+
+1. create a new repo
+	git clone git@github.com:avholloway/test1.git
+
+2. create files locally and work on them
+
+3. test your code
+
+4. add your files you wish to commit to the staging area
+	git add -A
+
+5. add a commit for these files
+	git commit -m "your commit notes"
+
+6. push your branch up to the cloud (for now, it's the master branch)
+	git push
+
+===========================================================================
+CREATE A BRANCH AND MAKE SOME CHANGES
+===========================================================================
+
+7. create a branch
+	git branch content-additions
+
+8. switch to this branch to make it your active working branch
+	git checkout content-additions
+
+9. set your upstream branch to match your local branch for pushes
+	git push --set-upstream origin content-additions
+
+10. work on your local files
+
+11. test your code
+
+12. add your files you wish to commit to the staging area
+	git add -A
+
+13. add a commit for these files
+	git commit -m "your commit notes"
+
+14. push your branch up to the cloud
+	git push
+
+===========================================================================
+MERGE OTHER MASTER CHANGES INTO YOUR BRANCH - THEY MAY BE NEEDED
+===========================================================================
+
+15. git merge master
+
+===========================================================================
+MERGE YOUR BRANCH INTO THE MASTER
+===========================================================================
+
+15. switch back to the master branch
+	git checkout master
+
+16. set your upstream branch to match your local branch for pushes
+	git push --set-upstream origin master
+
+17a. merge your new branch changes with the master branch
+	git merge content-additions
+
+17b. resolve conflicts by manually looking at and editing files
+
+17c. add these resolved files to staging
+	git add -A
+
+18. push your local master branch up to the cloud
+	git push
+
+19. delete your working branch
+	git branch -d content-additions
