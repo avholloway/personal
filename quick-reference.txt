@@ -9,3 +9,4 @@ git merge master
 git branch -d <branchname>
 git push origin --delete <branchname>
 --
+new changes
