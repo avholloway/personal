@@ -10,3 +10,4 @@ git branch -d <branchname>
 git push origin --delete <branchname>
 --
 new changes
+other changes
