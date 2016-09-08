@@ -8,3 +8,4 @@ git checkout master
 git merge master
 git branch -d <branchname>
 git push origin --delete <branchname>
+--
